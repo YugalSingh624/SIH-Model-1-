@@ -1,0 +1,61 @@
+[versions]
+agp = "8.5.1"
+appcompatVersion = "1.5.0"
+cameraCamera2 = "1.4.0-rc01"
+core = "1.45.0"
+coreKtxVersion = "1.8.0"
+filamentAndroid = "1.14.0"
+filamentAndroidVersion = "1.17.0"
+filamentUtils = "1.17.0"
+gltfioAndroid = "1.6.0"
+googleFilamentAndroid = "1.54.2"
+googleFilamentAndroidVersion = "1.6.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+camerax_version = "1.4.0-rc01"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.1"
+constraintlayout = "2.1.4"
+cameraView = "1.3.4"
+cameraLifecycle = "1.3.4"
+poseDetection = "17.0.0"
+graphicsCore = "1.0.0"
+
+
+
+[libraries]
+androidx-appcompat-v150 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCamera2" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-ktx-v180 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+core = { module = "com.google.ar:core", version.ref = "core" }
+filament-android = { module = "com.google.android.filament:filament-android", version.ref = "filamentAndroid" }
+filament-android-v1170 = { module = "com.google.android.filament:filament-android", version.ref = "filamentAndroidVersion" }
+filament-android-v1542 = { module = "com.google.android.filament:filament-android", version.ref = "googleFilamentAndroid" }
+filament-android-v160 = { module = "com.google.android.filament:filament-android", version.ref = "googleFilamentAndroidVersion" }
+filament-gltf = { module = "com.google.android.filament:filament-gltf", version.ref = "filamentAndroid" }
+filament-utils = { module = "com.google.android.filament:filament-utils", version.ref = "filamentAndroid" }
+filament-utils-android = { module = "com.google.android.filament:filament-utils-android", version.ref = "gltfioAndroid" }
+filament-utils-v1170 = { module = "com.google.android.filament:filament-utils", version.ref = "filamentUtils" }
+gltfio-android = { module = "com.google.android.filament:gltfio-android", version.ref = "gltfioAndroid" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraView" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraLifecycle" }
+pose-detection = { module = "com.google.mlkit:pose-detection", version.ref = "poseDetection" }
+pose-detection-accurate = { module = "com.google.mlkit:pose-detection-accurate", version.ref = "poseDetection" }
+androidx-graphics-core = { group = "androidx.graphics", name = "graphics-core", version.ref = "graphicsCore" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
