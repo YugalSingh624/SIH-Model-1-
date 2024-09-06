@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <!-- Text input for speech recognition results -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speech Result"
+        android:textSize="18sp" />
+
+    <!-- Text input for manual text -->
+    <EditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:hint="Enter text here" />
+
+    <!-- Button to process text input -->
+    <Button
+        android:id="@+id/processTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Process Text" />
+
+    <!-- Text view for showing matched phrases -->
+    <TextView
+        android:id="@+id/matchTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Result"
+        android:textSize="18sp" />
+
+    <!-- Image view for displaying GIFs or letters -->
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Image or GIF" />
+
+    <!-- Button to start speech recognition -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Speech Recognition" />
+
+</LinearLayout>
