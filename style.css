@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', 'Segoe UI', 'Roboto', sans-serif;
+}
+body {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+header {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffff;
+    text-transform: uppercase;
+}
+nav {
+    display: flex;
+}
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+nav a:hover {
+    color: #00ffff;
+}
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/id/1021/1000/800') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #00ffff;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    background-color: #00ffff;
+    color: #0a0a0a;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: #0a0a0a;
+    color: #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+}
+.converter {
+    padding: 4rem 5%;
+    background-color: #111;
+}
+.converter h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #00ffff;
+}
+.converter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.input-section, .output-section {
+    width: 48%;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 4px;
+    color: #e0e0e0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+#outputVideo {
+    width: 100%;
+    height: 300px;
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #888;
+}
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(20, 20, 20, 0.9);
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    nav.active {
+        display: flex;
+    }
+    nav a {
+        margin: 0.5rem 0;
+        padding: 0.5rem 5%;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.5rem;
+    }
+    .converter-container {
+        flex-direction: column;
+    }
+    .input-section, .output-section {
+        width: 100%;
+    }
+    #outputVideo {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    textarea {
+        height: 120px;
+    }
+    #outputVideo {
+        height: 150px;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Flow: Audio to ISL Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Sign Flow</div>
+        <nav id="mainNav">
+            <a href="#home">&#127968; Home</a>
+            <a href="#converter">&#128190; Converter</a>
+            <a href="#about">&#128196; About</a>
+            <a href="#contact">&#128231; Contact</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Sign Flow: Bridging Worlds</h1>
+            <p>Experience the future of communication with our cutting-edge Audio to Indian Sign Language Converter.</p>
+            <button class="btn" onclick="scrollToConverter()">Start Converting</button>
+        </div>
+    </section>
+
+    <section class="converter" id="converter">
+        <h2>Audio to ISL Converter</h2>
+        <div class="converter-container">
+            <div class="input-section">
+                <h3>Input Audio/Text</h3>
+                <textarea id="inputText" placeholder="Enter text or click 'Start Recording' to convert speech to text"></textarea>
+                <button class="btn" id="recordBtn" onclick="toggleRecording()">Start Recording</button>
+            </div>
+            <div class="output-section">
+                <h3>ISL Output</h3>
+                <div id="outputVideo">ISL animation will appear here</div>
+                <button class="btn" onclick="convertToISL()">Convert to ISL</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SignFlow Technologies. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
